@@ -9,8 +9,25 @@ body {
     box-sizing: border-box;
 }
 
+/* container
+=============== */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
 /* header
 =============== */
 .header {
+    padding: 35px 0;
     
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
 }
