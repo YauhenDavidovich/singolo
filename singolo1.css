@@ -98,3 +98,23 @@ h1 {
     color: #f06c64;
     transition: color .1 linear;
 }
+
+/* nav
+=============== */
+.slider {	
+	height: 600px;
+	margin: auto;
+    background-color: #f06c64;
+	border-bottom: 15px solid #ea676b;;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	
+}
