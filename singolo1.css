@@ -90,6 +90,10 @@ h1 {
     text-decoration: none;
 }
 
+.nav__link:first-child {
+    margin-left: 0;
+}
+
 .nav__link:hover {
     color: #f06c64;
     transition: color .1 linear;
