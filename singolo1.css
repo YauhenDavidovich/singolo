@@ -101,6 +101,14 @@ h1 {
 /* nav
 =============== */
 
+.nav {
+    
+    max-width: 400px;
+    margin-right: 40px;
+    margin-top: 26px;
+}
+
+
 ul.nav {
     padding: 1px 0 0 0;
 }
@@ -108,20 +116,26 @@ ul.nav {
 ul.nav li {
     float: left;
     font-size: 12px;
+    font-stretch: semi-condensed;
+    
+    letter-spacing: -0.28px;
     font-weight: 700;
     line-height: 6.32px;
     color: #494e62;
     text-transform: uppercase;
+    
 }
 
 ul.nav li:before {
-    font-family: Lato;
+    font-family: Lato;   
+    font-weight: 100;
     content: "\2022";
+    
 }
 
 ul.nav li:first-child:before {
-    content: "\2022";
-    color: #2d303a;
+    content: none;
+    
 }
 
 ul.nav li:first-child a {
@@ -135,7 +149,7 @@ ul.nav li:last-child a {
 ul.nav li a {
     color: #ffffff;
     display: inline-block;
-    margin: 0 13px 0 13px;
+    margin: 0 12px 0 12px;
 }
 
 ul.nav li a:hover {
@@ -266,7 +280,7 @@ h3 {
 }
 
 .services__row {
-    padding-top: 28px;
+    padding-top: 30px;
     padding-left: 1px;
     padding-right: 1px;
     
@@ -295,5 +309,18 @@ h4 {
     line-height: 21.56px;
     text-align: justify;
     padding-top: 10px;
-    padding-bottom: 32px;
+    padding-bottom: 33px;
+}
+
+.title__love h4{
+    margin-left: 2px;
+}
+
+.title__feel h4{
+    margin-left: 2px;
+}
+
+.title__support h4{
+    letter-spacing: -0.4px;
+    word-spacing: 0.4px;
 }
