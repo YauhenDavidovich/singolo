@@ -118,7 +118,7 @@ ul.nav li {
     font-size: 12px;
     font-stretch: semi-condensed;
     
-    letter-spacing: -0.28px;
+    letter-spacing: -0.2px;
     font-weight: 700;
     line-height: 6.32px;
     color: #494e62;
@@ -127,9 +127,8 @@ ul.nav li {
 }
 
 ul.nav li:before {
-    font-family: Lato;   
-    font-weight: 100;
-    content: "\2022";
+    font-family: Lato;      
+    content: "·";
     
 }
 
@@ -149,7 +148,7 @@ ul.nav li:last-child a {
 ul.nav li a {
     color: #ffffff;
     display: inline-block;
-    margin: 0 12px 0 12px;
+    margin: 0 13.5px 0 13.5px;
 }
 
 ul.nav li a:hover {
@@ -217,8 +216,9 @@ ul.nav li a:hover {
 /* services
 =============== */
 .services {    
-    height: 496px;    
+    height: 494.5px;    
     background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
 }
 
 .services__inner {
@@ -228,11 +228,7 @@ ul.nav li a:hover {
 }
 
 .services__header {
-    padding-top: 71px;
-}
-
-.title {
-    
+    padding-top: 71.5px;
 }
 
 .services__row {
@@ -267,6 +263,7 @@ h2 {
     letter-spacing: 0px;
     font-stretch: condensed;
     letter-spacing: 0.02px;
+    
 }
 
 h3 {
@@ -280,25 +277,25 @@ h3 {
 }
 
 .services__row {
-    padding-top: 30px;
+    padding-top: 29px;
     padding-left: 1px;
     padding-right: 1px;
     
 }
 
-.item-about {
-
-}
 
 h4 {
     color: #666d89;
     font-family: Lato-Black, sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
     line-height: 17.86px;
-    margin: 0px auto;
-    
-    font-stretch:
+    margin: 0px auto;        
+}
+
+.item-about__title {
+    letter-spacing: -0.4px;
+
 }
 
 .item-about__text {
@@ -308,19 +305,41 @@ h4 {
     font-weight: 400;
     line-height: 21.56px;
     text-align: justify;
-    padding-top: 10px;
+    padding-top: 11px;
     padding-bottom: 33px;
+    text-align: justify;
+    overflow: hidden;
+    
+
+}
+
+.title__design {
+    word-spacing: -2px;
+
+}
+
+.title__ideas {
+    
+}
+
+.design__text {
+    
+}
+
+.title__support {
+    letter-spacing: -1px;
+
 }
 
 .title__love h4{
     margin-left: 2px;
+    letter-spacing: -0.5px;
 }
 
 .title__feel h4{
     margin-left: 2px;
 }
 
-.title__support h4{
-    letter-spacing: -0.4px;
-    word-spacing: 0.4px;
+.support__text {
+    letter-spacing: -0.1px;
 }
