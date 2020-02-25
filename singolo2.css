@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('assets/fonts/Lato-Black.woff2') format('woff2'),
+        url('assets/fonts/Lato-Black.ttf') format('truetype'),
+        url('assets/fonts/Lato-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/fonts/Lato-Regular.woff2') format('woff2'),
+        url('assets/fonts/Lato-Regular.ttf') format('truetype'),
+        url('assets/fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    border: none;
+}
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 17.86px;
+    margin: 0 auto;
+    padding-top: 67px;
+}
+
+h3 {
+    color: #767e9e;
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+h4 {
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.86px;
+}
+
+.people__cards p {
+    color: #767e9e;
+    font-family: "Lato";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #2d303a;
+    overflow: hidden;
+    border-bottom: 6px solid #323746;
+    ;
+}
+
+.portfolio__inner {
+    height: 870px;
+
+
+}
+
+.portfolio ul.portfolio-menu {
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio ul.portfolio-menu li {
+    float: left;
+    display: inline;
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.portfolio ul.portfolio-menu li a {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    color: #767e9e;
+    padding: 6px 7px;
+    height: 100%;
+    display: block;
+}
+
+.portfolio__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+
+/* about us */
+
+.about {
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+    ;
+}
+
+.about__inner {
+    height: 728px;
+
+
+}
+
+.people__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
