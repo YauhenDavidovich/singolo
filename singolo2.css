@@ -58,7 +58,7 @@ h2 {
     line-height: 17.86px;
     margin: 0 auto;
     padding-top: 72.5px;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.2px;
 }
 
 h3 {
@@ -107,6 +107,9 @@ h4 {
     padding-left: 0px;
     width: 100%;
     overflow: hidden;
+    margin-top: 11.5px;
+    margin-left: 1px;
+    margin-bottom: 19px;
 }
 
 .portfolio ul.portfolio-menu li {
@@ -124,9 +127,27 @@ h4 {
     border-radius: 5px;
     border: 1px solid #666d89;
     color: #767e9e;
-    padding: 6px 7px;
+    padding: 2px 7px 2.5px;
     height: 100%;
-    display: block;
+    display: block;    
+} 
+
+
+.portfolio ul.portfolio-menu li:nth-child(2) a{
+    letter-spacing: 0.1px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.portfolio ul.portfolio-menu li:nth-child(3) a{
+    letter-spacing: 0.1px;
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+.portfolio ul.portfolio-menu li:nth-child(4) a{
+    letter-spacing: 0.2px;
+    padding-left: 6px;
+    padding-right: 5px;
 }
 
 .portfolio__images {
