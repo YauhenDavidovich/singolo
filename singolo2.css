@@ -133,6 +133,19 @@ h4 {
     display: block;    
 } 
 
+.portfolio ul.portfolio-menu li a:hover,
+.portfolio ul.portfolio-menu li.current a {
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #c5c5c5;
+	color: #dedede;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	}
 
 .portfolio ul.portfolio-menu li:nth-child(2) a{
     letter-spacing: 0.1px;
@@ -171,7 +184,7 @@ h4 {
 }
 
 .about__inner {
-    height: 730px;
+    height: 728px;
 }
 
 .about__inner h2{
