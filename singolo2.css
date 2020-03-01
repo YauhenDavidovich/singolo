@@ -58,8 +58,9 @@ h2 {
     line-height: 17.86px;
     margin: 0 auto;
     padding-top: 72.5px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.15px;
 }
+
 
 h3 {
     color: #767e9e;
@@ -98,7 +99,7 @@ h4 {
 }
 
 .portfolio__inner {
-    height: 870px;
+    height: 864px;
 
 
 }
@@ -170,13 +171,124 @@ h4 {
 }
 
 .about__inner {
-    height: 728px;
-
-
+    height: 730px;
 }
 
+.about__inner h2{
+    padding-top: 71.5px;
+    letter-spacing: -0.1px;
+    word-spacing: 0.1px;
+}
+
+.about__inner h3{
+    text-align: justify;
+}
+
+.about__inner h4{ 
+    padding-left: 0px;   
+    margin-top: 14px;
+    margin-left: -1px;
+    margin-bottom: 0px;    
+}
+
+.about__inner li:nth-child(2){ 
+    padding-left: 0px;   
+    word-spacing: -0.5px;
+    margin-left: 0px;    
+}
+
+.about__inner li:nth-child(3){      
+    word-spacing: 0.75px;  
+          
+}
+
+.about__inner p{ 
+    margin: 0 auto;
+    padding-top: 9px;
+    padding-bottom: 23px;
+    letter-spacing: -0.1px;  
+    word-spacing: -0.2px;
+    text-align: justify; 
+}
+
+.about__inner li:nth-child(1) p{
+    letter-spacing: -0.1px;
+    word-spacing: -1.5px;
+}
+
+.about__inner li:nth-child(1) p span{
+    letter-spacing: -0.05px;
+    word-spacing: 0px;
+}
+
+.about__inner li:nth-child(2) p{    
+    letter-spacing: 0.1px;
+    word-spacing: -0.8px;
+    margin-right: -1px;
+}
+
+.about__inner li:nth-child(3) p{    
+    letter-spacing: 0px;
+    word-spacing: -0.5px;
+    
+}
+
+
 .people__cards {
+    padding: 0px;
+    padding-top: 27px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
+
+.people__cards li{
+    padding-right: 19px;
+    padding-bottom: 14px;
+}
+
+.people__cards li:nth-child(2){
+    padding-right: 21px;
+}
+
+.people__cards li:nth-child(3){
+    padding-right: 0px;
+}
+
+ul.social-icons{
+    padding-left: 0px;
+}
+
+.people__cards .social-icons li:nth-child(1){    
+    padding-left: 1px;     
+}
+
+.people__cards .social-icons li:nth-child(3){    
+    padding-right: 3px;     
+}
+
+.people__cards li:nth-child(1) .social-icons li:nth-child(3){    
+    padding-right: 3px;     
+}
+
+.people__cards li:nth-child(2) .social-icons li:nth-child(3){    
+    padding-right: 2px;  
+    padding-left: 1px;   
+}
+
+.people__cards li:nth-child(3) .social-icons li{    
+    padding-right: 3px;  
+    padding-left: 0px;   
+}
+
+.people__cards li:nth-child(3) .social-icons li:nth-child(3){    
+    padding-right: 2px;  
+    padding-left: 1px;   
+}
+
+.people__cards .social-icons li{
+    display: inline;
+    padding-left: 0px; 
+    padding-right: 3.5px;
+}
+
