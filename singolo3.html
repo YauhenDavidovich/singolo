@@ -23,27 +23,26 @@
             	<li>
                 	<form action="" method="get">
                     	
-                        <input name="Name" class="" type="text" value="Name (Required)">
-                        
-                        <input name="Email" class="" type="text" value="Email (Required)">
-                        
+                        <input type="text" placeholder="Name (Required)" name="name" required="" pattern="^[a-zA-Zа-яА-ЯёЁ]+ [a-zA-Zа-яА-ЯёЁ]+$">    
+                        <input type="email" placeholder="Email (Required)" name="email" required="" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                         <input name="Subject" class="" type="text" value="Subject">
-                        
                         <textarea name="Detail" placeholder = 'Describe your project in detail...'>Describe your project in detail...</textarea>
-                        <input type="submit" value="submit" name="submit" class="submitbtn" />
-                        
+                        <input type="Submit" value="submit" name="submit" class="submitbtn" />                        
                     </form>
                 </li>
                 
                 <li>
                 	<h4>Contact Information</h4>
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh.
+                        Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
+                        Nulla sed nunc et tortor luctus faucibus.
+                        Morbi at <span>aliquet turpis, et consequat felis.</span> </p>
                     
                     
-                        <div class="contactDetails">
-                            <span class="location"><a href="https://yandex.by/maps/-/CKeaN-IV">Elm St. 14/05 Lost City</a></span>    
-                            <span class="telephone"><a href="tel:+035283318635">03528 331 86 35</a></span>
-                            <slide__iPhone_Vertical class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></slide__iPhone_Vertical>     
+                        <div class="contact-container">
+                            <span class="contact-container__location"><a href="https://yandex.by/maps/-/CKeaN-IV">Elm St. 14/05 Lost City</a></span>    
+                            <span class="contact-container__telephone"><a href="tel:+035283318635">03528 331 86 35</a></span>
+                            <span class="contact-container__mail"><a href="mailto:info@singolo.com">info@singolo.com</a></span>     
                         </div>
                     
                 </li>
@@ -52,6 +51,16 @@
 
     </div>
 </div>
-<footer>
-
-</footer>
+<footer class="footer">
+    <div class="container">
+      <div class="footer-panel">
+        <span>&copy; Copyright 2013</span>
+        <ul class="footer-socials">
+          <li><img src="assets/facebook-footer.png" alt="facebook"></li>
+          <li><img src="assets/google-footer.png" alt="google+"></li>
+          <li><img src="assets/twitter-footer.png" alt="twitter"></li>
+          <li><img src="assets/likedin-footer.png" alt="linkedin"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>

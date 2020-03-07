@@ -57,8 +57,8 @@ h2 {
     font-weight: 400;
     line-height: 17.86px;
     margin: 0 auto;
-    padding-top: 72.5px;
-    letter-spacing: 0.15px;
+    padding-top: 72px;
+    letter-spacing: -0.2px;
 }
 
 
@@ -85,18 +85,19 @@ h3 {
 }
 
 /* contact form */
+
 input {
     background: #d6564f;
     width: 619px;
-    eight: 38px;h
+    height: 38px;
     font-weight: 400;
     line-height: 21.56px;
     border: 0;
     font-size: 12px;
-    color: #f48c8f;    
+    color: #f0d8d9;    
     font-family: 'Lato', sans-serif;
-    padding: 0px 15px;
-    margin: 0 0 15px 0;
+    padding: 8px 18px;
+    margin: 0 0 16px 0;
     outline: none;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -136,8 +137,12 @@ textarea {
     color: #f0d8d9;
     font-family: "Lato-Black";
     font-size: 18px;
-    font-weight: 400;
-    line-height: 17.86px;
+    font-weight: 300;
+    line-height: 17.95px;
+    letter-spacing: 0.07px;
+    margin: 0 auto;
+    padding-top: 2px;
+    margin-left: 11px;
 }
 
 
@@ -147,18 +152,29 @@ textarea {
     font-family: "Lato";
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 1.82;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 22px;
+    margin-left: 11px;
+    text-align: justify;    
+    letter-spacing: -0.1px;
+}
+
+.quote-inner p span{    
+    line-height: 2;
 }
 
 .quote-inner ul {
-    padding: 40px 0 0 0;
+    margin: 0 auto;
+    padding: 44px 0 0 0;
     overflow: hidden;
 }
 
 .quote-inner ul li {
     float: left;
     display: inline;
-    max-width: 300px;
+    max-width: 320px;
     padding: 0 0 0 10px;
 }
 
@@ -167,11 +183,55 @@ textarea {
     max-width: 619px;
 }
 
-.contactDetails a {
+.contact-container a {
     display: block;
     color: #f0d8d9;
     font-family: "Lato";
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 21px;
+    margin-left: 12px;    
 }
+
+.contact-container__location a:before { content: url(assets/location.png); }
+.contact-container__telephone a:before { content: url(assets/phone.png); }
+.contact-container__mail a:before { content: url(assets/mail.png); }
+
+  /* footer */
+
+  .footer {
+    padding: 22px 0;  
+    background-color: #2d303a;
+  }
+  
+  .footer .footer-panel {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer .footer-panel > span {
+    font-size: 12px;
+    color: #666d89;
+  }
+  
+  .footer .footer-panel > .footer-socials {
+    display: flex;
+  }
+  
+  .footer .footer-panel > .footer-socials > li {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;  
+    align-items: center;
+    justify-content: center;  
+    border: 1px solid #666d89;
+    border-radius: 50%;
+  }
+  
+  .footer .footer-panel > .footer-socials > li:hover {
+    background-color: #dedede8a;  
+    cursor: pointer;  
+    transition: background-color .25s ease-in;
+  }
