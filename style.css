@@ -79,10 +79,10 @@ h1 {
   color: #ffffff;
   font-size: 25px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.45px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 .logo-link {
@@ -110,7 +110,7 @@ ul.nav li {
   float: left;
   font-size: 12px;
   font-stretch: semi-condensed;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.05px;
   font-weight: 400;
   line-height: 6.32px;
   color: #494e62;
@@ -137,10 +137,11 @@ ul.nav li:last-child a {
 ul.nav li a {
   color: #ffffff;
   display: inline-block;
-  margin: 0 13.5px 0 13.5px;
+  margin: 0 13px 0 13.5px;
 }
 
-ul.nav li a:hover {
+ul.nav li a:hover, 
+ul.nav li.current a {
   color: #f06c64;
   -o-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -290,7 +291,9 @@ ul.nav li a:hover {
   text-align: justify;
   overflow: hidden;
 }
-
+.item-about__icon-bulb, .item-about__icon-buble  {
+    margin-left: -1px;
+}
 .title__design h4 {
   word-spacing: -2px;
 }
@@ -504,7 +507,7 @@ ul {
   margin-bottom: 0px;
 }
 .about__inner > ul > li:nth-child(1) > ul > li:nth-child(3) {
-    padding-left:1px;    
+    padding-left:0px;    
 }
 
 .about__inner li:nth-child(2) {
@@ -581,16 +584,16 @@ ul.social-icons {
 }
 
 .people__cards li:nth-child(1) .social-icons li:nth-child(3) {
-  padding-right: 2px;
+  padding-right: 3px;
 }
 
 .people__cards li:nth-child(2) .social-icons li:nth-child(3) {
-  padding-right: 3px;
-  padding-left: 0px;
+  padding-right: 2px;
+  padding-left: 1px;
 }
 
 .people__cards li:nth-child(2) .social-icons li:nth-child(2) {    
-    padding-left: 1px;
+    padding-left: 0px;
   }
 
 .people__cards li:nth-child(3) .social-icons li {
@@ -599,7 +602,7 @@ ul.social-icons {
 }
 
 .people__cards li:nth-child(3) .social-icons li:nth-child(3) {
-  padding-right: 3px;
+  padding-right: 2px;
   padding-left: 1px;
 }
 
