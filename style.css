@@ -291,9 +291,7 @@ ul.nav li.current a {
   text-align: justify;
   overflow: hidden;
 }
-.item-about__icon-bulb, .item-about__icon-buble  {
-    margin-left: -1px;
-}
+
 .title__design h4 {
   word-spacing: -2px;
 }
