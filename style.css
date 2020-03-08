@@ -402,7 +402,6 @@ ul {
 
 .portfolio ul.portfolio-menu li {
   float: left;
-  display: inline;
   margin: 0 10px 0 0;
   font-size: 12px;
   font-weight: 300;
@@ -773,8 +772,7 @@ textarea {
 }
 
 .quote-inner ul li {
-  float: left;
-  display: inline;
+  float: left;  
   max-width: 320px;
   padding: 0 0 0 10px;
 }
