@@ -20,6 +20,14 @@ img {
     border: none;
 }
 
+fieldset,
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+}
+
 a,
 a:link,
 a:active,
@@ -51,7 +59,8 @@ ul {
 }
 
 h2 {
-    color: #f0d8d9;;
+    color: #f0d8d9;
+    ;
     font-family: "Lato-Black";
     font-size: 30px;
     font-weight: 400;
@@ -63,7 +72,8 @@ h2 {
 
 
 h3 {
-    color: #f0d8d9;;
+    color: #f0d8d9;
+    ;
     font-family: "Lato";
     font-size: 18px;
     font-weight: 300;
@@ -91,39 +101,42 @@ input {
     width: 619px;
     height: 38px;
     font-weight: 400;
-    line-height: 21.56px;
-    border: 0;
+    line-height: 21.56px;    
     font-size: 12px;
-    color: #f0d8d9;    
+    color: #f0d8d9;
     font-family: 'Lato', sans-serif;
-    padding: 8px 18px;
-    margin: 0 0 16px 0;
-    outline: none;
+    padding: 8px 15px;
+    margin: 0 0 16px 0;    
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
     border-radius: 5px;
 }
 
+::placeholder {
+    color: #f48c8f;;    
+  }
+
 textarea {
-	background: #d6564f;
-	width: 619px;
-	height: 202px;	
-	border: 0;
-	padding: 10px;
-	margin: 0 0 16px 0;
-	outline: none;
-	overflow: auto;
-	resize: none;
-	font-size: 12px;
-	color: #f48c8f;
-	font-family: 'Lato', sans-serif;
-	-moz-border-radius: 5px;
+    background: #d6564f;
+    width: 619px;
+    height: 202px;
+    border: 0;
+    padding-left: 14px;
+    padding-top: 12px;
+    margin: 0 0 16px 0;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    font-size: 12px;
+    color: #f48c8f;
+    font-family: 'Lato', sans-serif;
+    -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
-	border-radius: 5px;
-    }
-    
+    border-radius: 5px;
+}
+
 .submitbtn {
     height: 38px;
     width: 150px;
@@ -131,6 +144,13 @@ textarea {
     color: #d6564f;
     font-size: 14px;
 }
+
+.quote-form input:hover,
+.quote-inner textarea:hover {
+  box-shadow: 0px 0px 5px 0px rgba(27, 25, 25, 0.5), inset 0 0 0 50px #d6564f;
+  transition: box-shadow .1s ease-in;
+}
+
 
 /* contact information*/
 .quote-inner h4 {
@@ -157,12 +177,13 @@ textarea {
     padding-top: 10px;
     padding-bottom: 22px;
     margin-left: 11px;
-    text-align: justify;    
+    text-align: justify;
     letter-spacing: -0.1px;
 }
 
-.quote-inner p span{    
+.quote-inner p span {
     line-height: 2;
+    letter-spacing: -0.05px;
 }
 
 .quote-inner ul {
@@ -190,48 +211,79 @@ textarea {
     font-size: 12px;
     font-weight: 400;
     line-height: 21px;
-    margin-left: 12px;    
+    margin-left: 12px;
+    letter-spacing: -0.1px;
 }
 
-.contact-container__location a:before { content: url(assets/location.png); }
-.contact-container__telephone a:before { content: url(assets/phone.png); }
-.contact-container__mail a:before { content: url(assets/mail.png); }
+.contact-container__location a{
+    line-height: 20px;
+}
 
-  /* footer */
+.contact-container__mail a{
+    line-height: 20px;
+    letter-spacing: 0px;
+}
 
-  .footer {
-    padding: 22px 0;  
+.contact-container__location a:before {
+    content: url(assets/location.png);
+    padding-left: 2px;
+    padding-right: 12.5px;       
+}
+
+.contact-container__telephone a:before {
+    content: url(assets/phone.png);
+    padding-right: 11px;    
+}
+
+.contact-container__mail a:before {
+    content: url(assets/mail.png);
+    padding-right: 10px;    
+    margin-left: -1px; 
+    line-height: 23px; 
+}
+
+/* footer */
+
+.footer {
+    padding: 5px 0;
     background-color: #2d303a;
-  }
-  
-  .footer .footer-panel {
-    display: flex;  
+}
+
+.footer .footer-panel {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .footer .footer-panel > span {
+    padding-left: 0px;
+}
+
+.footer .footer-panel>span {
     font-size: 12px;
     color: #666d89;
-  }
-  
-  .footer .footer-panel > .footer-socials {
+    letter-spacing: -0.2px;
+    padding-left: 2px;
+}
+
+.footer .footer-panel>.footer-socials {
     display: flex;
-  }
-  
-  .footer .footer-panel > .footer-socials > li {
+}
+
+.footer .footer-panel>.footer-socials>li {
     display: flex;
     width: 30px;
     height: 30px;
-    margin-left: 8px;  
+    margin-left: 10px;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;    
+}
+
+ul.footer-socials {
+    padding-right: 1px;
+}
+
+.footer .footer-panel>.footer-socials>li:hover {
+    background-color: #dedede8a;
+    cursor: pointer;
+    transition: background-color .25s ease-in;
     border: 1px solid #666d89;
     border-radius: 50%;
-  }
-  
-  .footer .footer-panel > .footer-socials > li:hover {
-    background-color: #dedede8a;  
-    cursor: pointer;  
-    transition: background-color .25s ease-in;
-  }
+}
