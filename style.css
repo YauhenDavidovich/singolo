@@ -651,6 +651,7 @@ ul {
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
+  padding-bottom: px;
 }
 
 .quote-inner > h2 {
@@ -682,7 +683,7 @@ ul {
 }
 
 .quote-inner {
-  height: 648px;
+  padding-bottom: 15px;
 }
 
 /* contact form */
@@ -715,7 +716,7 @@ textarea {
   border: 0;
   padding-left: 14px;
   padding-top: 12px;
-  margin: 0 0 16px 0;
+  margin: 0 0 8px 0;
   outline: none;
   overflow: auto;
   resize: none;
@@ -734,6 +735,10 @@ textarea {
   background: #f0d8d9ad;
   color: #d6564f;
   font-size: 14px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .quote-form input:hover,
