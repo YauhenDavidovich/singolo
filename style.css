@@ -525,6 +525,7 @@ ul {
   letter-spacing: -0.1px;
   word-spacing: -0.2px;
   text-align: justify;
+  overflow: hidden;
 }
 
 .about__inner li:nth-child(1) p {
