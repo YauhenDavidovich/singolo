@@ -353,19 +353,31 @@
                 </h3>
                 <ul class="contact">
                     <li>
-                        <form class="quote-form" name="quote-form" action="#" autocomplete="on" method="POST">
+                        <form class="quote-form" name="quote-form" autocomplete="on" >
                             <input type="text" placeholder="Name (Required)" name="name" required=""
-                                pattern="^[a-zA-Zа-яА-ЯёЁ]+ [a-zA-Zа-яА-ЯёЁ]+$">
+                                pattern="^[a-zA-Zа-яА-ЯёЁ]+ [a-zA-Zа-яА-ЯёЁ]+$" id="name">
                             <input type="email" placeholder="Email (Required)" name="email" required=""
                                 pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                            <input type="text" placeholder="Subject" name="subject">
+                            <input type="text" placeholder="Subject" name="subject" id="subject">
                             <textarea name="Detail"
-                                placeholder='Describe your project in detail...'>Describe your project in detail...</textarea>
-                                <button class="submitbtn" type="submit">
-                                    Submit
-                                  </button>                            
-                        </form>
+                                placeholder='Describe your project in detail...' id="describe">Describe your project in detail...</textarea>
+                            
+                        </form>  
+                        <button class="submitbtn" id="button">
+                            Submit
+                          </button>                      
                     </li>
+                    <div class="fixed-overlay fixed-overlay__modal">
+                    <div id="message-block" class="hidden">
+                        <div id="message" class="hidden">
+                            <p>
+                                Письмо отправлено <span id="result"></span>
+                                <br>
+                                <button id ="close-button">OK</button>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
 
                     <li>
                         <h4>Contact Information</h4>
