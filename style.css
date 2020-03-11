@@ -106,6 +106,12 @@ ul.nav {
   padding: 1px 0 0 0;
 }
 
+
+ ul.nav li a.current {
+  color: #82cedb;
+}
+
+
 ul.nav li {
   float: left;
   font-size: 12px;
@@ -140,19 +146,14 @@ ul.nav li a {
   margin: 0 13px 0 13.5px;
 }
 
-/* ul.nav li a:hover, 
-ul.nav li.current a {
-  color: #f06c64;
+ul.nav li a:hover {
+  color: #82cedb79;
   -o-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-} */
+} 
 
-.current {
-  color: #f06c64;
-  background: white
-}
 
 /* slider
 =============== */
