@@ -893,15 +893,13 @@ ul.footer-socials {
 /* formmessage */
 
 #message-block {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  bottom: 0;
+  position: fixed;
+  top: 0;
   left: 0;
-  background-size: cover;
-  background: #38333360
+  width: 100vw;
+  height: 100vh;
+  background: rgba(63, 56, 56, 0.533);
 }
-
 
 
 #message-block.hidden {
@@ -910,9 +908,17 @@ ul.footer-socials {
 
 #message {
   position: absolute;
-  bottom: 50%;
-  left: 50%;
-  
-  border: 2px solid black;
+  bottom: calc(50vw - 150px);
+  left: calc(50vw - 150px);
+  width: 300px;
+  background-color: #2d303a;;
+  color: #f0d8d9;
+  padding: 15px;
   text-align: center;
+  border-radius: 5%;
+}
+
+#close-button {
+  background-color: #f0d8d9;
+  border-radius: 5%;
 }
