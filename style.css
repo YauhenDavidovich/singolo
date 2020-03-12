@@ -370,6 +370,9 @@ ul {
   margin-top: 14px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .people__cards p {
