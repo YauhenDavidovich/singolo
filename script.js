@@ -1,13 +1,16 @@
 const NAV = document.getElementById("menu");
 const BUTTON = document.getElementById("button");
 const BUTTON_CLOSE = document.getElementById("close-button");
-const PICTURE_BORDER = document.getElementById("portfolio_images")
+const PICTURE_BORDER = document.getElementById("portfolio_images");
+const PORTFOLIO_SHUFFLE = document.getElementById("portfolio_shuffle");
 
 
+if (NAV) {
 NAV.addEventListener("click", (event) => {
     NAV.querySelectorAll("a").forEach(el => el.classList.remove("current"));
     event.target.classList.add("current");
 });
+}
 
 BUTTON.addEventListener("click", () => {
     const x = document.forms["quote-form"]["name"].value;
@@ -37,3 +40,10 @@ PICTURE_BORDER.addEventListener("click", (event) => {
     PICTURE_BORDER.querySelectorAll("img").forEach(el => el.classList.remove("current_image"));
     event.target.classList.add("current_image");
 });
+
+if (PORTFOLIO_SHUFFLE) {
+    PORTFOLIO_SHUFFLE.addEventListener("click", (event) => {
+        PORTFOLIO_SHUFFLE.querySelectorAll("a").forEach(el => el.classList.remove("current-tab"));
+        event.target.classList.add("current-tab");
+    });
+}
