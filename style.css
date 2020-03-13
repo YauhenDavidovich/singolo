@@ -922,3 +922,8 @@ ul.footer-socials {
   background-color: #f0d8d9;
   border-radius: 5%;
 }
+
+.current_image {
+  border: 5px solid #F06C64;
+}
+

@@ -1,6 +1,7 @@
 const NAV = document.getElementById("menu");
 const BUTTON = document.getElementById("button");
 const BUTTON_CLOSE = document.getElementById("close-button");
+const PICTURE_BORDER = document.getElementById("portfolio_images")
 
 
 NAV.addEventListener("click", (event) => {
@@ -31,3 +32,8 @@ BUTTON_CLOSE.addEventListener ("click", () => {
     document.getElementById('describe').value = "";
     document.getElementById('message-block').classList.add("hidden");
 })
+
+PICTURE_BORDER.addEventListener("click", (event) => {
+    PICTURE_BORDER.querySelectorAll("img").forEach(el => el.classList.remove("current_image"));
+    event.target.classList.add("current_image");
+});
