@@ -31,6 +31,7 @@
     <div class="slider">
         <div class="container">
             <div class="slider__inner">
+
                 <div class="slider__arrow-left arrow-interactive">
                     <img src="assets/arrow.png" alt="arrow">
                 </div>
@@ -38,12 +39,24 @@
                     <img src="assets/arrow.png" alt="arrow">
                 </div>
                 <div class="slide">
-                    <a href="javascript:"><img src="assets/iPhone_Vertical_Base.png" alt="Vertical phone " class="slide__iPhone_Vertical_Base" id="iphone-vertical"></a>
-                    <a href="javascript:"><img src="assets/iPhone_Horizontal_Base.png" alt="Horizontal phone" class="slide__iPhone_Horizontal_Base" id="iphone-horizontal"></a>
-                    <img src="assets/iPhone_Vertical_clean.png" alt="Vertical phone" class="slide__iPhone_Vertical">                   
-                    <img src="assets/phone_layer_vertical.png" alt="Vertical phone display" class="slide__iPhone_Vertical-display" id="vertical_display">                    
-                    <img src="assets/iPhone_Horizontal_clean.png" alt="Horizontal phone" class="slide__iPhone_Horizontal">                    
-                    <img src="assets/phone_layer_horizontal.png" alt="Horizontal phone display" class="slide__iPhone_Horizontal-display" id="horizontal_display">
+                    <div class="slide1"> 
+                        <a href="javascript:"><img src="assets/iPhone_Vertical_Base.png"
+                                alt="Vertical phone " class="slide__iPhone_Vertical_Base" id="iphone-vertical"></a>
+                        <a href="javascript:"><img src="assets/iPhone_Horizontal_Base.png" alt="Horizontal phone"
+                                class="slide__iPhone_Horizontal_Base" id="iphone-horizontal"></a>
+                        <img src="assets/iPhone_Vertical_clean.png" alt="Vertical phone" class="slide__iPhone_Vertical">
+                        <img src="assets/phone_layer_vertical.png" alt="Vertical phone display"
+                            class="slide__iPhone_Vertical-display" id="vertical_display">
+                        <img src="assets/iPhone_Horizontal_clean.png" alt="Horizontal phone"
+                            class="slide__iPhone_Horizontal">
+                        <img src="assets/phone_layer_horizontal.png" alt="Horizontal phone display"
+                            class="slide__iPhone_Horizontal-display" id="horizontal_display">
+                        </div>
+                    <div class="slide2">
+                        <img src="assets/Slider2.png" alt="slider2"
+                            class="slider2">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -177,7 +190,7 @@
                 <ul class="portfolio__images" id="portfolio_images">
                     <li>
                         <a href="javascript:">
-                            <img src="assets/portfolio_image1.png" width="220" height="187" alt="portfolio_image1"/>
+                            <img src="assets/portfolio_image1.png" width="220" height="187" alt="portfolio_image1" />
                         </a>
                     </li>
                     <li>
@@ -358,10 +371,8 @@
                 <ul class="contact">
                     <li>
                         <form class="quote-form" name="quote-form" autocomplete="on" onsubmit="return false;" method="">
-                            <input type="text" placeholder="Name (Required)" name="name" required=""
-                                 id="name">
-                            <input type="email" placeholder="Email (Required)" name="email" required=""
-                                 id="email">
+                            <input type="text" placeholder="Name (Required)" name="name" required="" id="name">
+                            <input type="email" placeholder="Email (Required)" name="email" required="" id="email">
                             <input type="text" placeholder="Subject" name="subject" id="subject">
                             <textarea name="Detail" placeholder='Describe your project in detail...'
                                 id="describe"></textarea>
@@ -375,10 +386,10 @@
                         <div id="message" class="hidden">
                             <p>Письмо отправлено
                                 <br>
-                            <span id="subject-result"></span>
-                            <br>
-                            <span id="describe-result"></span>
-                        </p>
+                                <span id="subject-result"></span>
+                                <br>
+                                <span id="describe-result"></span>
+                            </p>
                             <br>
                             <button id="close-button">OK</button>
                         </div>

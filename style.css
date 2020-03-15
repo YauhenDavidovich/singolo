@@ -195,9 +195,26 @@ ul.nav li a:hover {
   transform: scale(1.2);
 }
 
-.slide {
-  position: relative;
+.slides_container {
+  width: 100%;  
+  position: relative; 
+   
 }
+
+.slide {
+  height: 600px;
+  position: relative;
+  width: 1020px;    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  overflow: hidden;  
+}
+
+.slide1, .slide2 {
+  width: 1020px
+}
+
 
 .slide__iPhone_Vertical {
   position: absolute;
@@ -216,7 +233,8 @@ ul.nav li a:hover {
   top: 53px;
   left: 112px;
   z-index: 998;
-  opacity: 0;   
+  opacity: 0; 
+  
 }
 
 .slide__iPhone_Horizontal {
