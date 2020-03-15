@@ -205,11 +205,29 @@ ul.nav li a:hover {
   left: 112px;
 }
 
+.slide__iPhone_Vertical-display {
+  position: absolute;
+  top: 118px;
+  left: 126px;
+}
+
 .slide__iPhone_Horizontal {
   position: absolute;
   top: 174px;
   right: 111px;
 }
+
+.slide__iPhone_Horizontal-display {
+  position: absolute;
+  top: 188px;
+  left: 485px;
+}
+
+#vertical_display.hidden {
+  opacity: 0;}
+
+#horizontal_display.hidden {
+    opacity: 0;}
 
 /* services
 =============== */
