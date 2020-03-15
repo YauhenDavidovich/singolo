@@ -211,6 +211,14 @@ ul.nav li a:hover {
   left: 126px;
 }
 
+.slide__iPhone_Vertical_Base {
+  position: absolute;
+  top: 53px;
+  left: 112px;
+  z-index: 998;
+  opacity: 0;   
+}
+
 .slide__iPhone_Horizontal {
   position: absolute;
   top: 174px;
@@ -220,7 +228,15 @@ ul.nav li a:hover {
 .slide__iPhone_Horizontal-display {
   position: absolute;
   top: 188px;
-  left: 485px;
+  right: 202px;
+}
+
+.slide__iPhone_Horizontal_Base {
+  z-index: 999;
+  position: absolute;
+  top: 174px;
+  right: 135px; 
+  opacity: 0; 
 }
 
 #vertical_display.hidden {
