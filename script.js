@@ -5,6 +5,7 @@ const PICTURE_BORDER = document.getElementById("portfolio_images");
 const PORTFOLIO_SHUFFLE = document.getElementById("portfolio_shuffle");
 const VERTICAL_PHONE_DISPLAY_SWITCH = document.getElementById("iphone-vertical");
 const HORIZONTAL_PHONE_DISPLAY_SWITCH = document.getElementById("iphone-horizontal");
+const SLIDER_SWITCH = document.getElementById("slider_switch");
 
 if (NAV) {
     NAV.addEventListener("click", event => {
@@ -85,3 +86,18 @@ if (HORIZONTAL_PHONE_DISPLAY_SWITCH) {
         }
     });
 }
+
+
+    SLIDER_SWITCH.addEventListener("click", (event) => {
+        if (document.getElementById("slider2").classList.contains("invisible")) {
+            document.getElementById("slider1").classList.add("invisible");
+            document.getElementById("slider2").classList.remove("invisible");
+            document.getElementById("slider").style.backgroundColor = '#648BF0';
+            document.getElementById("slider").style.borderBottom = '6px solid rgb(58, 78, 201)';
+        } else {
+            document.getElementById("slider2").classList.add("invisible");
+            document.getElementById("slider1").classList.remove("invisible");
+            document.getElementById("slider").style.backgroundColor = '#f06c64';
+            document.getElementById("slider").style.borderBottom = '6px solid #ea676b';
+        }
+    });

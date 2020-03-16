@@ -180,7 +180,10 @@ ul.nav li a:hover {
   padding: 0 40px;
   max-width: 1020px;
   margin: 0 auto;
+}
 
+.invisible{
+  display: none;
 }
 
 .slider-nav {
@@ -220,7 +223,7 @@ ul.nav li a:hover {
 
 .slide {
   height: 100%;
-  padding: 0 72px;
+  
   overflow: hidden;
   position: relative;
 }
@@ -298,6 +301,15 @@ ul.nav li a:hover {
 
 #horizontal_display.hidden {
   opacity: 0;
+}
+
+.slide2 {
+  position: absolute;
+  height: 590px;
+    width: 796px;    
+    
+    transform: translate(-50%, -50%);
+    
 }
 
 /* services
