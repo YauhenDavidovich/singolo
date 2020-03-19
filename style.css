@@ -220,8 +220,13 @@ ul.nav li a:hover {
 }
 
 .wrooom_left {
-  transform: translate(1020px, 0px))
-  transition: 250ms ease-in-out;
+  transform: translate(-1020px, 0px);
+  transition: 1s ease-in-out;
+}
+
+.wrooom_right {
+  transform: translate(1020px, 0px);
+  transition: 1s ease-in-out;
 }
 
 .slide {
@@ -305,10 +310,7 @@ ul.nav li a:hover {
 
 .slide2 {
   position: absolute;
-  height: 590px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 590px;     
 
 }
 

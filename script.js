@@ -92,9 +92,9 @@ if (HORIZONTAL_PHONE_DISPLAY_SWITCH) {
     SLIDER_SWITCH_LEFT.addEventListener("click", (event) => {
         if (document.getElementById("slider2").classList.contains("invisible")) {
             document.getElementById("slider1").classList.add("wrooom_left");
-                      
             document.getElementById("slider2").classList.remove("invisible");
-            document.getElementById("slider1").classList.add("invisible");  
+            document.getElementById("slider2").classList.add("wrooom_left");   
+             
             document.getElementById("slider").style.backgroundColor = '#648BF0';
             document.getElementById("slider").style.borderBottom = '6px solid rgb(58, 78, 201)';
         } else {
