@@ -219,13 +219,17 @@ ul.nav li a:hover {
   transform: scale(1.2);
 }
 
-
+.wrooom_left {
+  transform: translate(1020px, 0px))
+  transition: 250ms ease-in-out;
+}
 
 .slide {
   height: 100%;
   margin: 0 72px;
   overflow: hidden;
   position: relative;
+  
 }
 
 
