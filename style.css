@@ -59,7 +59,7 @@ ul {
 .header {
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
-  position: fixed;
+  position: sticky;
   top: 0px;
   z-index: 10000;
   width: 100%;
@@ -69,7 +69,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95px;
+  height: 86px;
 }
 
 /* logo
@@ -112,11 +112,9 @@ ul.nav {
   padding: 1px 0 0 0;
 }
 
-
 ul.nav li a.current {
   color: #82cedb;
 }
-
 
 ul.nav li {
   float: left;
@@ -160,26 +158,29 @@ ul.nav li a:hover {
   transition-duration: 0.2s;
 }
 
-
 /* slider
 =============== */
 .slider {
-
   background-color: #f06c64;
-  border-bottom: 6px solid #ea676b;
   margin-top: 95px;
   scroll-margin-top: 95px;
-  margin: 0 auto;
+  margin: 0 auto;  
+  border-bottom: 6px solid #ea676b;
+  transition: all ease 1.5s; 
+}
+
+.slide_next {
+  background-color: #648BF0;
+  border-bottom: 6px solid #648BF0;  
+  transition: all ease 1.5s;
 }
 
 .slider_container {
-  max-width: 1020px;
+  width: 940px;
   margin: 0 auto;
   position: relative;
-  height: 600px;
-  margin-top: 95px;
+  
 }
-
 
 .invisible {
   display: none;
@@ -219,34 +220,29 @@ ul.nav li a:hover {
   transform: scale(1.2);
 }
 
-.wrooom_left {
-  transform: translate(-1020px, 0px);
-  transition: 1s ease-in-out;
-}
-
-.wrooom_right {
-  transform: translate(1020px, 0px);
-  transition: 1s ease-in-out;
-}
 
 .slide {
-  height: 100%;
-  margin: 0 72px;
   overflow: hidden;
-  position: relative;
-  
+  display: flex;
+  justify-content: space-around;  
+  padding: 24px;
 }
 
 
-.slide1 {
-  height: 100%;
-    width: 100%;
-    position: absolute;    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;    
-    padding-right: 30px;
+
+.slide_item {
+  display: none;
+  position: relative;  
+  animation: all ease 1.5s;
+  height: 513px;
+}
+
+.slide_active,
+.slide_next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 513px;
 }
 
 .Iphone_Vertical {
@@ -255,26 +251,59 @@ ul.nav li a:hover {
   height: 483px;
 }
 
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+  
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
 .slide__iPhone_Vertical {
   position: absolute;
-  
-
 }
 
 .slide__iPhone_Vertical-display {
   position: absolute;
-  
+
   top: 65px;
   left: 14px;
-
-
 }
 
 .slide__iPhone_Vertical_Base {
   position: absolute;
   opacity: 0;
   z-index: 998;
-
 }
 
 .Iphone_Horizontal {
@@ -291,7 +320,6 @@ ul.nav li a:hover {
   position: absolute;
   top: 14px;
   left: 60px;
-
 }
 
 .slide__iPhone_Horizontal_Base {
@@ -308,11 +336,7 @@ ul.nav li a:hover {
   opacity: 0;
 }
 
-.slide2 {
-  position: absolute;
-  height: 590px;     
 
-}
 
 /* services
 =============== */
@@ -448,7 +472,6 @@ ul {
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
-
 }
 
 .portfolio__inner>h2 {
@@ -1014,7 +1037,6 @@ ul.footer-socials {
   background: rgba(63, 56, 56, 0.533);
 }
 
-
 #message-block.hidden {
   display: none;
 }
@@ -1042,5 +1064,5 @@ ul.footer-socials {
 }
 
 .current_image {
-  border: 5px solid #F06C64;
+  border: 5px solid #f06c64;
 }

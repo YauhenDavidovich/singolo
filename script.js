@@ -5,8 +5,11 @@ const PICTURE_BORDER = document.getElementById("portfolio_images");
 const PORTFOLIO_SHUFFLE = document.getElementById("portfolio_shuffle");
 const VERTICAL_PHONE_DISPLAY_SWITCH = document.getElementById("iphone-vertical");
 const HORIZONTAL_PHONE_DISPLAY_SWITCH = document.getElementById("iphone-horizontal");
-const SLIDER_SWITCH_LEFT = document.getElementById("slider_switch-left");
-const SLIDER_SWITCH_RIGHT = document.getElementById("slider_switch-right");
+const LEFT_ARROW = document.getElementById('slider_switch-left');
+const RIGHT_ARROW = document.getElementById('slider_switch-right');
+const SLIDER = document.getElementById('slider');
+const SLIDE1 = document.getElementById('slider1');
+const SLIDE2 = document.getElementById('slider2');
 
 if (NAV) {
     NAV.addEventListener("click", event => {
@@ -89,18 +92,61 @@ if (HORIZONTAL_PHONE_DISPLAY_SWITCH) {
 }
 
 
-    SLIDER_SWITCH_LEFT.addEventListener("click", (event) => {
-        if (document.getElementById("slider2").classList.contains("invisible")) {
-            document.getElementById("slider1").classList.add("wrooom_left");
-            document.getElementById("slider2").classList.remove("invisible");
-            document.getElementById("slider2").classList.add("wrooom_left");   
-             
-            document.getElementById("slider").style.backgroundColor = '#648BF0';
-            document.getElementById("slider").style.borderBottom = '6px solid rgb(58, 78, 201)';
-        } else {
-            document.getElementById("slider2").classList.add("invisible");
-            document.getElementById("slider1").classList.remove("invisible");
-            document.getElementById("slider").style.backgroundColor = '#f06c64';
-            document.getElementById("slider").style.borderBottom = '6px solid #ea676b';
-        }
-    });
+let items = document.querySelectorAll('.slide .slide_item');
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem(n) {
+	currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+	isEnabled = false;
+  items[currentItem].classList.add(direction);
+  items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('slide_active', direction);
+  })
+}
+
+function showItem(direction) {
+  items[currentItem].classList.add('slide_next', direction);
+  items[currentItem].addEventListener('animationend', function() {
+    this.classList.remove('slide_next', direction);
+		this.classList.add('slide_active');
+		isEnabled = true;
+  })
+}
+
+function nextItem(n) {
+  hideItem('to-left');
+  changeCurrentItem(n + 1);
+  showItem('from-right');
+}
+
+function previousItem(n) {
+  hideItem('to-right');
+  changeCurrentItem(n - 1);
+  showItem('from-left');
+}
+
+LEFT_ARROW.addEventListener('click', () => {
+    if(SLIDER.classList.contains('slide_next')) {
+      SLIDER.classList.remove('slide_next')
+    } else {
+      SLIDER.classList.add('slide_next')
+    }
+    if (isEnabled) {
+      previousItem(currentItem);
+      }
+  })
+  
+  RIGHT_ARROW.addEventListener('click', () => {
+    if (SLIDER.classList.contains('slide_next')) {
+      SLIDER.classList.remove('slide_next')
+    } else {
+      SLIDER.classList.add('slide_next')
+    }
+    if (isEnabled) {
+      nextItem(currentItem);
+      }
+  })
