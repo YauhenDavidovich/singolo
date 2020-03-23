@@ -69,7 +69,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 86px;
+  height: 89px;
 }
 
 /* logo
@@ -160,38 +160,29 @@ ul.nav li a:hover {
 
 /* slider
 =============== */
-.slider {
+.slider_main {
   background-color: #f06c64;
-  margin-top: 95px;
-  scroll-margin-top: 95px;
-  margin: 0 auto;  
   border-bottom: 6px solid #ea676b;
-  transition: all ease 1.5s; 
-}
-
-.slide_next {
-  background-color: #648BF0;
-  border-bottom: 6px solid #648BF0;  
   transition: all ease 1.5s;
 }
 
-.slider_container {
-  width: 940px;
-  margin: 0 auto;
-  position: relative;
-  
+.bgBlue {
+  background-color: #648BF0;
+  border-bottom: 6px solid #649BF0;
 }
 
-.invisible {
-  display: none;
+.slider_container {
+  width: 1020px;
+  margin: 0 auto;  
 }
+
 
 .slider-nav {
   position: absolute;
   height: 100px;
   width: calc(100% + 2px);
-  left: 0px;
-  top: calc(50% - 52px);
+  padding-left: 20px;
+  top: calc(50% - 15px);
   display: flex;
   justify-content: space-between;
   z-index: 9500;
@@ -220,30 +211,52 @@ ul.nav li a:hover {
   transform: scale(1.2);
 }
 
-
-.slide {
+/* .slide {
   overflow: hidden;
   display: flex;
   justify-content: space-around;  
   padding: 24px;
+} */
+
+.slider {
+  padding: 24px 42px 51px 42px;
+  position: relative;
+  height: 594px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
+.phones {
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 415px);
+  width: 830px;
+  height: 519px;
+  overflow: hidden;
+}
 
 
 .slide_item {
-  display: none;
-  position: relative;  
-  animation: all ease 1.5s;
-  height: 513px;
+  width: 830px;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all ease 1s;
 }
 
-.slide_active,
-.slide_next {
+.slide_1{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 513px;
 }
+
+.slide_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
 
 .Iphone_Vertical {
   position: relative;
@@ -251,42 +264,7 @@ ul.nav li a:hover {
   height: 483px;
 }
 
-.to-left {
-  animation-name: left;
-}
 
-.from-right {
-  animation-name: right;
-}
-
-.to-right {
-  animation-name: right;
-  animation-direction: reverse;
-}
-
-.from-left {
-  animation-name: left;
-  animation-direction: reverse;
-}
-
-@keyframes left {
-  from {
-    left: 0;
-  }
-  to {
-    left: -100%;
-  }
-  
-}
-
-@keyframes right {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 0;
-  }
-}
 
 
 .slide__iPhone_Vertical {
@@ -335,8 +313,6 @@ ul.nav li a:hover {
 #horizontal_display.hidden {
   opacity: 0;
 }
-
-
 
 /* services
 =============== */
