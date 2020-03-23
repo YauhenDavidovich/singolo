@@ -180,8 +180,8 @@ ul.nav li a:hover {
 .slider-nav {
   position: absolute;
   height: 100px;
-  width: calc(100% + 2px);
-  padding-left: 20px;
+  width: 100%;  
+  padding-right: 82px;
   top: calc(50% - 15px);
   display: flex;
   justify-content: space-between;
