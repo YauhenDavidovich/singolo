@@ -15,6 +15,28 @@ if (NAV) {
         NAV.querySelectorAll("a").forEach(el => el.classList.remove("current"));
         event.target.classList.add("current");
     });
+} 
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll() {
+  const currentPos = window.scrollY;
+  const div = document.querySelectorAll('main>div');
+  const links = document.querySelectorAll('.nav a');
+
+  div.forEach((el) => {
+    if (el.offsetTop <= currentPos + 300) {
+      links.forEach((a) => {
+        a.classList.remove('current');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('current');    
+        } else if (el.getAttribute('id') === 'slider_main') {
+          let home = document.getElementById('home-link');
+          home.classList.add('current');
+        }
+      })
+    }
+  })
 }
 
 /*** Quote form ***/
