@@ -16,15 +16,6 @@
   font-style: normal;
 }
 
-h2 {
-  margin-top: -5000px;
-  padding-top: 200px;
-}
-h2:first-of-type {
-  margin-top: 0;
-}
-
-
 img {
   border: none;
 }
@@ -72,6 +63,7 @@ ul {
   top: 0px;
   z-index: 10000;
   width: 100%;
+  
 }
 
 .header__inner {
@@ -174,6 +166,10 @@ ul.nav li a:hover {
   border-bottom: 6px solid #ea676b;
   transition: all ease 1.5s;
   scroll-margin-top: 30px;
+  padding-top: 55px;
+	margin-top: -55px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
 }
 
 .bgBlue {
@@ -495,6 +491,10 @@ ul {
   overflow: hidden;
   border-bottom: 6px solid #323746;
   scroll-margin-top: 30px;
+  padding-top: 55px;
+	margin-top: -55px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
 }
 
 .portfolio__inner {
