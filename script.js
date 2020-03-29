@@ -191,15 +191,17 @@ slider_init();
 
 /*** Burger nav ***/
 
+
+
 const burgerMenuActive = () => {
     let burgerBtn = document.querySelector('.header__burger'); 
-    let nav = document.querySelector('.nav');
-    let navHideScreen = document.querySelector('.nav_hidescreen');
+    let nav = document.querySelector('.top-nav');
+    let navHideScreen = document.querySelector('.top-nav_hidescreen');
 
     document.querySelector('.header__burger').addEventListener('click', () => {
         burgerBtn.classList.toggle('header__burger_active');
-        navHideScreen.classList.toggle('nav_hidescreen-active')
-        nav.classList.toggle('nav_active');
+        navHideScreen.classList.toggle('top-nav_hidescreen-active')
+        nav.classList.toggle('top-nav_active');
 
     })
     
@@ -208,10 +210,10 @@ const burgerMenuActive = () => {
     function hiddenBurgerMenuActive() {
         
         navHideScreen.addEventListener('click', (e) => {
-            if (e.target.classList.contains('nav_hidescreen-active')) {
+            if (e.target.classList.contains('top-nav_hidescreen-active')) {
                 burgerBtn.classList.remove('header__burger_active');
-                navHideScreen.classList.remove('nav_hidescreen-active')
-                nav.classList.remove('nav_active');  
+                navHideScreen.classList.remove('top-nav_hidescreen-active')
+                nav.classList.remove('top-nav_active');  
             }
         })
         
