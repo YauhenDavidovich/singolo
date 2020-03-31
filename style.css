@@ -1302,6 +1302,10 @@ ul.footer-socials {
     width: 58px;
   }
 
+  .services__text h3 {
+    line-height: 25px;
+  }
+
   .services__inner {
     width: 314px;
     margin: 0 auto;
@@ -1352,6 +1356,10 @@ ul.footer-socials {
   .about__inner {
     height: 1754px;
     width: 315px;
+  }
+
+  .about__inner > h3 {
+    line-height: 25px;
   }
 
   .people__cards > li > img {
