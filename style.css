@@ -271,6 +271,7 @@ ul.nav li a:hover {
 }
 
 .slider {
+  overflow: hidden;
   padding: 24px 42px 51px 42px;
   position: relative;
   height: 594px;
@@ -1107,13 +1108,13 @@ ul.footer-socials {
   }
 
   .slider {
-    height: 451px;
+    height: 451px;    
   }
 
   .slider-nav {
     margin: 0 auto;
     width: 712px;
-    padding-right: 0px;
+    padding-right: 10px;
   }
 
   .slider_container {
@@ -1123,10 +1124,28 @@ ul.footer-socials {
 
   .slide_1 {
     height: 364px;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .slide_2 {
+    padding-top: 20px;
+  }
+
+  .slide_item {
+    width: 600px;
+    
+    margin-left: 120px;
+  }
+
+  .phones {
+    position: relative;
+    width: 768px;
+    
   }
 
   .phones img {
-    max-width: 100%;
+    max-width: 100%;    
   }
 
   .Iphone_Vertical {
@@ -1162,7 +1181,7 @@ ul.footer-socials {
   }
 
   .services__inner {
-    width: 768px;
+    width: 687px;
     margin: 0 auto;
   }
 
@@ -1178,6 +1197,7 @@ ul.footer-socials {
 
   .portfolio__images {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
   }
 
   .portfolio__inner {
@@ -1216,6 +1236,10 @@ ul.footer-socials {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+  .header__logo {
+    padding-right: 120px;
+  }
+  
   .container {
     width: 375px;
   }
@@ -1229,6 +1253,7 @@ ul.footer-socials {
     margin: 0 auto;
     width: 356px;
     padding-right: 0px;
+    margin-left: 10px;
   }
 
   .slider_container {
@@ -1237,7 +1262,7 @@ ul.footer-socials {
   }
 
   .slide_1 {
-    height: 178px;
+    height: 178px;    
   }
 
   .phones img {
@@ -1247,6 +1272,7 @@ ul.footer-socials {
   .Iphone_Vertical {
     width: 88px;
     height: 178px;
+    margin-right: 25px;
   }
 
   .slide__iPhone_Vertical-display {
@@ -1471,6 +1497,7 @@ ul.footer-socials {
     margin: 0 auto;
     width: 310px;
     padding-right: 0px;
+    margin-left: 2px;
   }
 
   .slider_container {
